@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,800;1,900&display=swap');
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --green:green;
+  }
+
+.banner-text{
+    font-size:25px;
+    font-family:Nunito;
+    font-family:Handlee;   
+}
+.font-f{
+    font-family:Nunito;
+}
+.font-s{
+    font-family:Nunito;
+    font-weight: 600;
+    font-size: 17px;
+}
+.circle1{
+    border:solid #01AB52 2px;  
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px 10px 5px 10px;
+    background-color: azure;
+    padding-top: 20px;
+    
+}
+.icon-c{
+    color: #01AB52;
+}
+.header-bg{
+    background-color: #C0DDEA;
+}
+.header-bg1{
+    background-color: #C8E2DC;
+}
+.header-bg1{
+    background-color: #C8E2DC;
+}.header-bg2{
+    background-color: #f5e9b6;
+}
+.card-body-bg{
+    background-color: #EEEEEE;
+}
+.card-body-bg2{
+    background-color: #F1EEDE;
+}
+.card-body-bg3{
+    background-color:#CAECFB; 
+}
+.bg-container{
+    background-color: #b3c8ec;
+}
+.bg-year{
+    background-color: #aeb2e4;
+}
+.tbale1{
+    border: 0.5px solid rgba(233, 168, 76, 0.808);
+    background-color:#E1DDC9;
+}
+.footer{
+ 
+}
+.footer a{
+    text-decoration: none;
+    color: #73dcff;
+    margin: 0px auto;
+    padding: 0px;
+    font-size: small;
+    line-height: 0.5px;
+   
+}
+.footer ul li{
+    list-style: none;
+    margin-left: -35px;
+}
