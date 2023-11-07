@@ -17,4 +17,4 @@ jobs:
         server: profile.dotsoft.buzz
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/profile.dotsoft.buzz/
+        server-dir: /profile.dotsoft.buzz/
