@@ -3,7 +3,7 @@ name: 🔄 Sync from cPanel
 on:
   push:
     paths:
-      - 'https://github.com/Ruhul-Amin-Badol/Test-FTP.git'
+      - '**'
     branches:
       - master  # Change this to your main branch name
 
@@ -36,3 +36,15 @@ jobs:
         git add -A
         git commit -m "Sync from cPanel"
         git push origin master
+
+      - name: Check for changes
+    run: |
+      if [[ $(git status --porcelain) ]]; then
+        git config user.name "Ruhul-Amin-Badol"
+        git config user.email "ruhul.gub@gmail.com"
+        git add -A
+        git commit -m "Sync from cPanel"
+        git push origin master
+      else
+        echo "No changes to sync."
+      fi
