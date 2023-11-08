@@ -31,19 +31,13 @@ jobs:
 
         # Commit and push changes to the repository
 
-        git config user.name "Ruhul-Amin-Badol"
-        git config user.email "ruhul.gub@gmail.com"
-        git add .
-        git commit -m "Sync from cPanel"
-        git push
-
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
         server: mhafuz.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server-dir: /public_html/index.html/
+
+        git config user.name "Ruhul-Amin-Badol"
+        git config user.email "ruhul.gub@gmail.com"
         git add .
         git commit -m "Sync from cPanel"
         git push
