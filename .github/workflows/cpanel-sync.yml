@@ -3,7 +3,7 @@ name: 🔄 Sync from cPanel
 on:
   push:
     paths:
-      - '**'
+      - 'https://github.com/Ruhul-Amin-Badol/Test-FTP.git'
     branches:
       - master  # Change this to your main branch name
 
