@@ -31,10 +31,6 @@ jobs:
 
         # Commit and push changes to the repository
 
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/index.html/
-
         git config user.name "Ruhul-Amin-Badol"
         git config user.email "ruhul.gub@gmail.com"
         git add .
