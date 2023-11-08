@@ -31,7 +31,6 @@ jobs:
 
         # Commit and push changes to the repository
 
-        server: mhafuz.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server-dir: /public_html/index.html/
