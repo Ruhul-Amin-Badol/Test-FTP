@@ -23,28 +23,18 @@ jobs:
       with:
         node-version: '16'
 
-    # - name: 📁 Sync files back to GitHub
-    #   run: |
-    #     # Add any necessary commands to sync changes from cPanel to your local copy
-    #     # For example, use SCP or other commands to copy changed files
-    #     # You can use your own logic to determine which files to sync
+    - name: 📁 Sync files back to GitHub
+      run: |
+        # Add any necessary commands to sync changes from cPanel to your local copy
+        # For example, use SCP or other commands to copy changed files
+        # You can use your own logic to determine which files to sync
 
-    #     # Commit and push changes to the repository
+        # Commit and push changes to the repository
 
-    #     git config user.name "Ruhul-Amin-Badol"
-    #     git config user.email "ruhul.gub@gmail.com"
-    #     git add -A
-    #     git commit -m "Sync from cPanel"
-    #     git push origin master
-
-      - name: Check for changes
-    run: |
-      if [[ $(git status --porcelain) ]]; then
         git config user.name "Ruhul-Amin-Badol"
         git config user.email "ruhul.gub@gmail.com"
         git add -A
         git commit -m "Sync from cPanel"
         git push origin master
-      else
-        echo "No changes to sync."
-      fi
+
+  
