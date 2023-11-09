@@ -29,6 +29,9 @@ jobs:
         # For example, use SCP or other commands to copy changed files
         # You can use your own logic to determine which files to sync
 
+        # Add the commands to sync changes from cPanel to your local copy
+        scp -r mhafuz@mhafuz.com:/path/to/files/* ./
+
         # Commit and push changes to the repository
 
         git config user.name "Ruhul-Amin-Badol"
