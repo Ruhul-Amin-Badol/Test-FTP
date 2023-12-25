@@ -5,7 +5,7 @@ on:
     paths:
       - '**'
     branches:
-      - master  # Change this to your main branch name
+      - main  # Change this to your main branch name
 
 jobs:
   sync:
@@ -30,7 +30,7 @@ jobs:
         # You can use your own logic to determine which files to sync
 
         # Add the commands to sync changes from cPanel to your local copy
-        scp -i ${{ secrets.FTP_PASSWORD}} -r mhafuz@mhafuz.com:/public_html/index.html/* ./
+        scp -i ${{ secrets.FTP_PASSWORDFTP_PASSWORD}} -r mhafuz@mhafuz.com:/public_html/index.html/* 
 
         # Commit and push changes to the repository
 
@@ -38,6 +38,6 @@ jobs:
         git config user.email "ruhul.gub@gmail.com"
         git add .
         git commit -m "Sync from cPanel"
-        git push
+        git push origin main
 
   
