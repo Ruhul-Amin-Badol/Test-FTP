@@ -3,7 +3,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if the file was uploaded without errors
     if (isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"]["error"] == 0) {
-        $target_dir = "../uploads/"; // specify your upload directory
+        $target_dir = "../upload/"; // specify your upload directory
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 
         // Check if the file already exists
