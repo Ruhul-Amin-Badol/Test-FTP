@@ -30,7 +30,7 @@ jobs:
         # You can use your own logic to determine which files to sync
 
         # Add the commands to sync changes from cPanel to your local copy
-        scp -i ${{ secrets.ftp_password}} -r mhafuz@mhafuz.com:/public_html/index.html/* ./
+        scp -i ${{ secrets.ftp_password}} -r mhafuz@mhafuz.com:/public_html/index.html/* 
         scp -i C:\Users\ASUS\Downloads\id_rsa.ppk -r mhafuz@mhafuz.com:/public_html/index.html/*
 
 
