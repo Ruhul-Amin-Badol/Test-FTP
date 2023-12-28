@@ -7,7 +7,7 @@ use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
 
 // Local upload details
-$localUploadDirectory = "../upload"; // Replace with the actual path to your local upload directory
+$localUploadDirectory = "../upload/"; // Replace with the actual path to your local upload directory
 
 // AWS S3 details
 $AWS_S3_BUCKET = "nbrs3bucket";
