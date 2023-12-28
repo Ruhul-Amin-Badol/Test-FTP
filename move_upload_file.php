@@ -1,7 +1,7 @@
 <?php
 
 // Include the AWS SDK for PHP autoloader
-require 'vendor/autoload.php'; // Replace with the actual path to aws-autoloader.php
+//require 'vendor/autoload.php'; // Replace with the actual path to aws-autoloader.php
 
 use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
