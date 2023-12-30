@@ -23,10 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                 echo "The file " . htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " has been uploaded locally.";
 
-                $s3 = new S3Client([
-                    'version' => 'latest',
-                    'region' => $AWS_REGION,
-                ]);
+                // $s3 = new S3Client([
+                //     'version' => 'latest',
+                //     'region' => $AWS_REGION,
+                // ]);
 
                 try {
                     $result = $s3->putObject([
