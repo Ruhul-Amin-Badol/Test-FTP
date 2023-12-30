@@ -10,7 +10,7 @@ $AWS_S3_BUCKET = "nbrs3bucket";
 $AWS_S3_DIRECTORY = "testfolder";
 $AWS_REGION = "ap-south-1";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
     if (isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"]["error"] == 0) {
         $target_dir = $localUploadDirectory;
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -47,5 +47,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Error: " . $_FILES["fileToUpload"]["error"];
     }
-}
+
 ?>
